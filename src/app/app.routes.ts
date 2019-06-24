@@ -7,7 +7,8 @@ import { BlogComponent } from './components/blog/blog.component';
 
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: HomeComponent ,
+     },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'service', component: ServiceComponent },
@@ -15,4 +16,6 @@ const routes: Routes = [
     { path: '**', pathMatch:'full', redirectTo: 'home' }
 ];
 
-export const appRouting = RouterModule.forChild(routes);
+
+export const appRouting = RouterModule.forRoot(routes);
+
